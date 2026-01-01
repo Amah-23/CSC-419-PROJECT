@@ -12,7 +12,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="font-bold text-xl text-blue-800">
-            Amah F.
+            Amah U
           </Link>
 
           <div className="hidden md:flex space-x-8">

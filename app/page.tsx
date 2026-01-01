@@ -1,6 +1,6 @@
-// app/page.tsx
+
 import Link from 'next/link';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar'; 
 import { projects } from './data';
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
       <Navbar />
 
       <main>
-        {/* 1. About Section */}
+
         <section id="about" className="py-24 text-center px-4 bg-white">
           <div className="max-w-4xl mx-auto">
             <span className="text-blue-600 font-bold tracking-wider uppercase text-sm">Final Year Student</span>
@@ -20,8 +20,8 @@ export default function Home() {
               400 Level Computer Science Student @ <span className="font-medium text-blue-800">Pan-Atlantic University</span>
             </p>
             <p className="text-lg text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed">
-              I specialize in robust <strong>Backend Development</strong>, <strong>Database Management</strong>, and <strong>Cyber Security</strong>. 
-              My passion lies in building secure systems and immersive <strong>Game Development</strong> experiences.
+              I specialize in <strong>Backend Development</strong>, <strong>Database Management</strong>, and <strong>Cyber Security</strong>. 
+              My passion is in building secure applications and immersive <strong>Game Development</strong> experiences.
             </p>
             <div className="flex justify-center gap-4">
               <Link href="#projects" className="bg-blue-700 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-800 transition shadow-lg hover:shadow-xl">
@@ -34,7 +34,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 2. Projects Section */}
+        
         <section id="projects" className="py-20 bg-gray-50 px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-4">My Projects</h2>
@@ -44,7 +44,7 @@ export default function Home() {
               {projects.map((project) => (
                 <div key={project.id} className="bg-white border border-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group">
                   
-                  {/* PROJECT IMAGE */}
+                  
                   <div className="h-48 w-full relative overflow-hidden bg-gray-200">
                     <img 
                       src={project.image} 
@@ -62,6 +62,7 @@ export default function Home() {
                     </div>
                     <p className="text-gray-600 mb-6 text-sm line-clamp-3">{project.description}</p>
                     
+                    
                     <Link href={`/projects/${project.id}`} className="inline-flex items-center text-blue-600 font-semibold text-sm hover:underline">
                       View Project Details <span className="ml-1">&rarr;</span>
                     </Link>
@@ -72,20 +73,24 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 3. Contact Section */}
+       
         <section id="contact" className="py-24 text-center px-4 bg-white border-t">
-          <div className="max-w-2xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">Let's Connect</h2>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Contact Me @9411</h2>
             <p className="text-gray-600 mb-8">
                 I am currently open to opportunities in Backend Engineering or Security analysis.
             </p>
             
-            <div className="flex flex-col md:flex-row justify-center gap-6 items-center">
-              <a href="mailto:ugochukwuamah@gmail.com" className="flex items-center gap-2 bg-gray-900 text-white px-6 py-4 rounded-lg hover:bg-gray-800 w-full md:w-auto justify-center">
-                <span>📧</span> ugochukwuamah@gmail.com
+            
+            <div className="flex flex-col md:flex-row justify-center gap-4 items-center flex-wrap">
+              <a href="mailto:ugochukwuamah23@gmail.com" className="flex items-center gap-2 bg-gray-900 text-white px-6 py-4 rounded-lg hover:bg-gray-800 w-full md:w-auto justify-center">
+                <span>📧</span> ugochukwuamah23@gmail.com
               </a>
               <a href="https://wa.me/2348123456789" className="flex items-center gap-2 border border-green-600 text-green-700 px-6 py-4 rounded-lg hover:bg-green-50 w-full md:w-auto justify-center">
-                <span>📱</span> WhatsApp: 08123456789
+                <span>📱</span> WhatsApp: 08123232323
+              </a>
+              <a href="https://github.com/Amah-23/CSC-419-PROJECT" target="_blank" className="flex items-center gap-2 border border-gray-300 text-gray-800 px-6 py-4 rounded-lg hover:bg-gray-100 w-full md:w-auto justify-center">
+                <span>🐙</span> GitHub Repo
               </a>
             </div>
           </div>
@@ -95,6 +100,13 @@ export default function Home() {
       <footer className="bg-gray-900 text-gray-400 py-10 text-center">
         <p className="mb-2">&copy; 2026 Amah Frederick Ugochukwu</p>
         <p className="text-sm">Final Year Project • Pan-Atlantic University</p>
+        
+        {/* GitHub Repository Link */}
+        <p className="mt-4 text-xs">
+          <a href="https://github.com/Amah-23/CSC-419-PROJECT" target="_blank" className="text-blue-400 hover:text-white underline transition">
+            View Source Code
+          </a>
+        </p>
       </footer>
     </div>
   );

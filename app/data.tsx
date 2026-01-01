@@ -1,4 +1,4 @@
-// app/data.tsx
+
 
 export type Project = {
   id: string;
@@ -13,6 +13,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    // This ID must match your folder name: app/projects/garment-precision
     id: "garment-precision",
     title: "Garment Precision (AI Try-On)",
     description: "A Next.js application using a Nano Banana wrapper to facilitate virtual clothing try-ons via AI.",
@@ -27,20 +28,22 @@ export const projects: Project[] = [
     image: "/garment.png"
   },
   {
+    // This ID must match your folder name: app/projects/pau-campus-map
     id: "pau-campus-map",
     title: "PAU Campus Gamification",
     description: "A mobile game built with Unity that helps students navigate the campus using AI guides.",
-    tech: ["Unity", "C#", "AI Pathfinding", "Geolocation"], // <--- UPDATED
+    tech: ["Unity", "C#", "AI Pathfinding", "Geolocation"], 
     fullDescription: "Navigating the PAU campus can be daunting for freshers. I developed an interactive mobile game that acts as a digital twin of the university. Unlike simple 2D maps, this project uses Unity's NavMesh and A* pathfinding algorithms to create AI NPCs that physically guide the player to their destination.",
     features: [
       "Real-time GPS integration within the Unity Engine",
-      "AI Agents using A* Pathfinding for route optimization", // <--- UPDATED
+      "AI Agents using A* Pathfinding for route optimization", 
       "Gamified badge system for discovering key landmarks"
     ],
     learnings: "I mastered the integration of real-world GPS coordinates into the Unity 3D coordinate system and learned to optimize C# scripts for mobile battery performance.",
     image: "/map.png"
   },
   {
+    // This ID must match your folder name: app/projects/ai-face-recognition
     id: "ai-face-recognition",
     title: "Secure Facial Recognition System",
     description: "A biometric security system that grants access only to a specific set of registered users.",
